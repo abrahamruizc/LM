@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Ejercicio4</title>
+<style>
+    table{
+        border:rgba(190, 178, 4, 0.863) 1px solid;
+        
+    }
+
+    th,td{
+        width: 250px;
+        height: 30px;
+    }
+    .l{
+        width: 500px;
+    }
+</style>
+
+<body>
+    <form method="POST" action="lanzar">
+    <table>
+        <tr>
+            <th align="left" style="background-color: rgba(190, 178, 4, 0.863);">Leave Form</th>
+            <td class="l" style="background-color: rgba(190, 178, 4, 0.863);"><select style="background-color:rgba(190, 178, 4, 0.863);" name="select">
+                <option value="value1" selected>More Actions</option> 
+                <option value="value2">Action 1</option>
+                <option value="value3">Action 2</option>
+              </select></td>
+        </tr>
+
+        <tr>
+            <th><label for="email">Employee Email</label></th>
+            <td align="center"><input style="background-color:  rgba(190, 178, 4, 0.863) ;" type="text"  name="email"/></td>
+
+        </tr>
+
+        <tr>
+            <th><label for="id">Employee ID</label></th>
+            <td align="center"><input style="background-color:  rgba(190, 178, 4, 0.863) ;" type="number"  name="id"/></td>
+
+        </tr>
+
+        <tr>
+            <th><label for="name">Employee name</label></th>
+            <td align="center"><input style="background-color:  rgba(190, 178, 4, 0.863) ;" type="Text"  name="name"/></td>
+
+        </tr>
+
+        <tr>
+            <th><label for="destino">Designation</label></th>
+            <td align="center"><input style="background-color:  rgba(190, 178, 4, 0.863) ;" type="Text"  name="destino"/></td>
+
+        </tr>
+
+        <tr>
+            <th><label for="select">Leave Type</label></th>
+            <td align="center"><select style="width: 240px;" name="select">
+                <option value="value1" selected>-Select-</option> 
+                <option value="value2">User</option>
+                <option value="value3">Admin</option>
+              </select></td>
+
+        </tr>
+
+        <tr>
+            <th><label for="from">From</label></th>
+            <td align="center"><input type="date"  name="from"/><img width="20" src="calendario.png"></td>
+        </tr>
+
+    
+        
+        <tr>
+            <th><label for="To">To</label></th>
+            <td align="center"><input type="date"  name="To"/><img width="20" src="calendario.png"></td>
+        </tr>
+
+        <tr>
+            <th><label for="days">No of Days</label></th>
+            <td align="center"><input type="text"  name="days"/></td>
+        </tr>
+
+        <tr>
+            <th><label for="reason">Reason</label></th>
+            <td align="center"><input type="text"  name="reason" style="height: 100px;"/></td>
+        </tr>
+        <tr>
+            <td style="background-color: whitesmoke;" colspan="2" align="center"><button style="color: white; background-color:rgba(190, 178, 4, 0.863)">Submit</button><button style="color: white; background-color:rgba(190, 178, 4, 0.863)">Reset</button></td>
+            
+        </tr>
+
+
+    </table>
+    </form>   
+
+</body>
+
+
+
+</html>

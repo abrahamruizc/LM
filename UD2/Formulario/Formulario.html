@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Formulario</title>
+<style>
+    th, td{
+        width: 163px;
+        
+    }
+    .imput{
+        width: 138px;
+    }
+</style>
+</head>
+
+
+<body>
+    <form method="post" action="destination.html">
+    <table>
+
+        <thead>
+            <tr>
+                <td bgcolor="409dc8" colspan="2" align="center">IES Alixar Login</td>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><label for="usuario">Usuario:</label></td>
+                <td><input name="usuario" /></td>
+            </tr>
+
+            <tr>
+                <td><label for="pass">Password:</label></td>
+                <td><input type="password" name="pass" /></td>
+            </tr>
+
+            <tr>
+                <td><label for="date">Fecha de Nacimiento:</label></td>
+                <td><input type="date" name="date" /></td>
+            </tr>
+
+            <tr>
+                <td>Curso de Matriculación</td>
+                <td><input class="imput" list="titulo">
+
+                    <datalist id="titulo">
+                        <option value="Primero DAW1">
+                        <option value="Segundo DAW2">
+                        <option value="Primero SMR1">
+                        <option value="Segundo SMR2">
+                    </datalist></td>
+            </tr>
+
+            <tr>
+                <td><label for="role">Role:</label></td>
+                <td><input type="radio" name="role" value="estudiante" />Estudiante<br />
+                    <input type="radio" name="role" value="profesor" checked />Profesor<br />
+                    <input type="radio" name="role" value="apoyo" checked />Apoyo<br />
+                    <input type="radio" name="role" value="staff" checked />Staff<br />
+                </td>
+            </tr>
+            <tr>
+                <td><label for="comunicacion">Forma de Comunicación:</label></td>
+                <td><input type="checkbox" name="comunicacion" value="mail" />Mail<br />
+                    <input type="checkbox" name="comunicacion" value="telefono" />Teléfono<br />
+                    <input type="checkbox" name="comunicacion" value="correo ordinario" />Correo ordinario</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Enviar" />
+                    <input type="reset" value="Borrar" />
+                </td>
+            </tr>
+
+        </tfoot>
+
+
+        
+    </table>
+    </form>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Practica Examen</title>
+<style>
+    
+    .lo{
+        width: 700px;
+    }
+    .lu{
+        width: 1200px;
+    }
+    .la{
+        width: 630px;
+    }
+    fieldset{
+        border:grey 1px solid;
+    }
+</style>
+
+
+</head>
+
+<body>
+    <caption><strong>HOJA DE INSCRIPCIÓN<br> EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</strong><br><br></caption>
+
+    <form method="POST" action="lanzar">
+        <fieldset style="background-color:#A9A9A9" style="border-collapse: collapse;">
+        <legend style="border: 1px solid black;background-color: white;">Datos Personales</legend>
+        <table>
+            
+            
+            
+                    
+            <tr>
+                
+                <td> 
+                    <p>
+                        <label for="texto">Nombre:</label><br>
+                        <input type="text"name="texto"/>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <label for="apellidos">Apellidos:</label><br>
+                        <input type="text"name="apellidos"/>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <label for="DNI">DNI</label><br>
+                        <input type="text"name="DNI" style="width: 135px;"/>
+                    </p>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <p>
+                        <label for="localidad">Localidad Nacimiento</label><br>
+                        <input type="text"name="localidad"/>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <label for="provincia">Provincia:</label><br>
+                        <input  list ="provincia">
+
+                        <datalist id="provincia">
+                        <option value="Sevilla">
+                        <option value="Huelva">
+                        <option value="Cordoba">
+                        <option value="Jaén">
+                        <option value="Granada">
+                        </datalist>
+                    </p>
+                </td>
+
+
+                <td>
+                    <p>
+                        <label for="nacimiento">Fecha de nacimiento</label><br>
+                        <input type="date" name="nacimiento"/>
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <p>
+                        <label for="direccion">Dirección:</label><br>
+                        <input type="text"  name="direccion" style="width: 300px;"/>
+                    </p>
+                </td>
+                <td class="lo">
+                    <p>
+                        <label for="numero">Código Postal:</label><br>
+                        <input type="number" name="numero" style="width: 135px;"/>
+                    </p>
+                </td>
+            </tr>
+
+        </table><br>
+        </fieldset>
+
+        <fieldset style="background-color:#FFDAA5" style="border-collapse: collapse;">
+            <legend style="border: 1px solid black;background-color: white;">Formas de Acceso</legend>
+        <table>
+
+            <tr >
+                <td colspan="3" class="lu">
+                    <ul style="list-style-type: none;">
+                        <label for="direc"></label><input type="radio" name="direc" value="direc">Direct
+                            <ul style="list-style-type: none;">
+                                
+                                <li><label for="bachillerato"></label><input type="radio" name="bachillerato" value="bachillerato">Bachillerato LOGSE Modalidad<input type="text"name="bachillerato"/></li>
+                                <li><label for="bachillerato"></label><input type="radio" name="bachillerato" value="bachilleratoE">Bachillerato Experimental</li>
+                                <li><label for="bachillerato"></label><input type="radio" name="bachillerato" value="cou">COU.Opción<input type="text"name="bachillerato"/></li>
+                                <li><label for="bachillerato"></label><input type="radio" name="bachillerato" value="fp2">FP2</li>
+                                <li><label for="bachillerato"></label><input type="radio" name="bachillerato" value="otro">Otros(especíque)<input type="text"name="bachillerato"/></li>
+                            </ul>
+                        <label for="direc"></label><input type="radio" name="direc" value="prueba">Prueba Libre
+                    </ul>
+                </td>
+            </tr>   
+
+            
+        </table><br>
+    </fieldset>
+        
+    <fieldset style="background-color:#FF7878" style="border-collapse: collapse;">
+        <legend style="border: 1px solid black;background-color: white;">Documentos Adjuntados</legend>
+        <table>
+        
+                <tr>
+                    <td>
+                        <input type="checkbox" name="adjuntados" value="fotocopia">Fotocopia DNI
+                    </td>
+                    <td>
+                        <input type="checkbox" name="adjuntados" value="certificado">Certificado Académico
+                    </td>
+                    <td class="la"></td>
+        
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="adjuntados" value="otrosd">Otros documentos (especifique)<input type="text" style="width: 270px;" name="adjuntados"/>
+                    </td>
+                    <td></td>
+                </tr>
+        </table>
+    </fieldset>
+        <p><input type="submit" value ="Enviar Solicitud"/></p>
+            
+    </form>     
+
+
+</body>
+
+
+</html>

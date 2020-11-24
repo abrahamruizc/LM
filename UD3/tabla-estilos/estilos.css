@@ -1,0 +1,45 @@
+
+table {
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+#amarillo {
+    background-color: yellow;
+    padding: 30px;
+}
+
+#rojo {
+    color: red;
+}
+
+th[colspan="3"]{
+    background-color: blue;
+}
+
+th[colspan="2"]{
+    background-color: blue;
+}
+
+td[colspan="2"]{
+    background-color: blue;
+}
+
+.rojo {
+    background-color: red;
+    color: white;
+}
+
+.gris {
+    background-color: grey;
+    font-size: x-large;
+}

@@ -1,0 +1,56 @@
+table {
+   border-collapse: collapse; 
+   border: black 1px solid;
+   
+}
+
+tr, td{
+   border: black 1px solid;
+}
+
+#daw {
+   color: white ;
+   background-color: black;
+}
+
+.verde {
+   background-color: rgba(228, 252, 14, 0.603);
+
+}
+
+.marron{
+   background-color: coral;
+
+}
+
+.rojo{
+   background-color: red;
+   color: white;
+}
+
+.blanco{
+   background-color: white;
+
+}
+
+.tomate{
+   background-color: tomato;
+   color: white;
+
+}
+
+.roscu{
+   background-color: brown;
+   color: white;
+}
+
+.azul{
+   background-color: rgba(24, 73, 207, 0.877);
+
+}
+
+.ver{
+   background-color: green;
+
+}
+
