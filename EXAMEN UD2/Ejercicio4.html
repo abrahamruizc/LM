@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Ejercicio4</title>
+
+<style>
+   table{
+       border: solid blue;
+   }
+   legend{
+       color: blue;
+   }
+
+</style>
+
+</head>
+
+<body>
+
+    <table>
+
+        <tr>
+            <th>
+        <p style="text-align: left;">Reservation Request</p>
+
+        <form method="POST" action="lanzar">
+    
+            <fieldset>
+            <legend>General Information</legend>
+            <p><label for="date">Arrival date:</label><input type="date" name="date"/><p></p>
+                
+
+                <p>
+                    <label for="noches">Nights:</label>
+                    <input type="text"name="noches"/>
+                </p>
+
+                <p>
+                    <label for="adultos">Adults:</label>
+                    <input type="number" name="adultos" style="width: 20px;"/>
+                </p>
+
+                <p>
+                    <label for="niños">Children:</label>
+                    <input type="number" name="niños" style="width: 20px;"/>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <label for="roomtype">Room type:</label><input type="radio" name="roomtype" value="standar">Standard
+                <input type="radio" name="roomtype" value="busines">Business
+                <input type="radio" name="roomtype" value="suit">Suite<br>
+
+                <label for="bedtype">Bed type:</label><input type="radio" name="bedtype" value="rey">King
+                <input type="radio" name="bedtype" value="doble">Double Double<br>
+                <input type="checkbox" name="bedtype" value="smoking">Smoking
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <p>
+                    <label for="name">name:</label>
+                    <input type="text"name="name"/>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="text"  name="email"/>
+                </p>
+
+
+                <p>
+                    <label for="telefono">Phone:</label>
+                    <input type="number" name="telefono"/>
+                </p>
+            </fieldset>
+
+            <p><input type="submit" value ="Submit Reservation"/><input type="submit" value ="clear"/> </p>
+        </form> 
+
+            </th>
+        </tr>
+    </table>
+   
+
+    
+</body>
+
+
+</html>
