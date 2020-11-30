@@ -1,0 +1,55 @@
+
+table{
+   width: 500px;
+   height: 160px;
+}
+
+a {
+   color: green;
+   text-decoration: none;
+   
+}
+
+
+
+th {
+   font-size: 20px;
+}
+
+
+td:first-child{
+   background-color: green;
+}
+
+[colspan="5"] {
+   background-color: yellow;
+}
+
+tbody :nth-child(7):hover{
+   font-size: 2em;
+}
+
+tbody td:last-child:hover{
+   font-size: 1.5em;
+}
+
+
+
+thead th::first-letter{
+   font-size: 1.6em;
+}
+
+[value="Enviar Horario"]{
+   border-radius: 5px;
+}
+
+input:first-of-type{
+   border-color: red;
+   width: 200px;
+   height: 25px;
+
+}
+
+span{
+   color: red;
+}
