@@ -1,0 +1,56 @@
+En body , lo que esta realizando con background-color
+es cambiar el color de la pagina (el cuerpo) en el html:
+
+/* Body */
+body {background-color: tan}
+
+
+en headers lo que se realiza es asignarle a la etiqueta h1(que es la etiqueta para hacer titulos) la propiedad
+de que esta sea de color marron, de forma que asi aparezca en el html:
+
+/* Headers */
+h1 {color:maroon; font-size:20pt}
+
+
+en hr lo que a realizado es asignar a la etiqueta hr (que es una etiqueta usada para crear lineas)
+el color azul navy:
+
+/* HR (Hard Rule = line) */
+hr {color:navy}
+
+
+En los parrafos lo que se a realizado es asignarle a la etiqueta p (parrafo)
+un tamaño de 12pt y un margen que es simplemente un espacio a la izquierda de 15 pixeles
+
+tambien se le esta asignando una etiqueta class creada en css para los parrafos
+de forma que pone la etiqueta p.(y el nombre de la clase en este caso verse) 
+a esta le puso el color marron y un margen a la izquierda de 60 pixeles
+
+para usar esta clase añade dentro de los parrafos la etiqueta class="(nombre de la clase en css en este caso verse)":
+
+
+/* Paragraphs */
+p {font-size:12pt; margin-left: 15px}
+p.verse {color:maroon; margin-left: 60px}
+
+
+/* Divs */
+
+En links lo que se realiza es una serie de selectores
+se usan definendo la etiqueta de los enlaces con a y luego añadiendo las opciones en css
+
+en ellos lo que se realiza es lo siguiente:
+
+en a link le añade al enlace el color verde
+
+lo que se realiza en visited es para que cuando ese enlace haya sido usado este se cambie al color amarillo
+
+con hover añade para que cuando el raton se ponga sobre el enlace este cambie de color a negro
+
+y con active cambia el color al pulsar sobre el enlace para que se ponga de color azul
+
+/* Links */
+a:link     {color:green}
+a:visited  {color:yellow}
+a:hover    {color:black}
+a:active   {color:blue}

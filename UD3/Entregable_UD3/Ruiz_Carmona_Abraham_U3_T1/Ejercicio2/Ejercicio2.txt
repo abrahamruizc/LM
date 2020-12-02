@@ -1,0 +1,3 @@
+No son iguales los parrafos al resto porque los dos primeros tienen añadidos en ellos la etiqueta class="verse" (en la etiqueta p)
+
+la cual aplica en el css el color marron y un margen a la izquierda de 60 pixeles
