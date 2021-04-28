@@ -1,0 +1,65 @@
+//letra texto
+$letra-blanca:white;
+$letra-negra:black;
+
+
+
+/*contenedor*/
+.container{
+    $anchura-contenedor:80%;
+    $altura-contenedor:700px;
+    width:$anchura-contenedor;
+    height:$altura-contenedor;
+    margin: 0 auto;
+    /*cabecera*/
+    .cabeza{
+        //color para la cabecera
+        $fondo-cabecera:blue;
+        $altura-cabecera:230px;
+        $anchura-cabecera:100%;
+        background-color:$fondo-cabecera;
+        //altura y anchura cabecera
+        width: $anchura-cabecera;
+        height: $altura-cabecera;
+
+    }
+}
+/*imagen*/
+$imagen: "img/cara.jpg";
+img{
+    
+
+    //tamaño imagen
+    $anchura-img:190px;
+    $altura-img:140px;
+    width: $anchura-img;
+    height: $altura-img;
+
+    //margen
+    $margen-imagen:20px;
+    margin-left: $margen-imagen;
+    margin-top: $margen-imagen;
+}
+/*color h1*/
+h1{
+    color: $letra-blanca;
+    &:hover{color: black;} 
+}
+
+h2{
+    color: $letra-negra;
+    &:hover{color:seagreen;}
+}
+
+.cuerpo{
+    color: $letra-negra;
+    
+}
+
+
+/*autor*/
+$autor:"AbrahamRuizCarmona";
+
+/*
+    esta web a sido realizada por #{$autor}
+*/
