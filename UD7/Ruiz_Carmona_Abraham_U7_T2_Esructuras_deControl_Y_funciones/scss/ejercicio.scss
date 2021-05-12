@@ -1,0 +1,129 @@
+//letra texto
+$letra-blanca:white;
+$letra-negra:black;
+
+
+
+/*contenedor*/
+.container{
+    $anchura-contenedor:80%;
+    $altura-contenedor:900px;
+    width:$anchura-contenedor;
+    height:$altura-contenedor;
+    margin: 0 auto;
+   
+    /*cabecera*/
+    .cabeza{
+        //color para la cabecera
+        $fondo-cabecera:blue;
+        $altura-cabecera:230px;
+        $anchura-cabecera:100%;
+        background-color:$fondo-cabecera;
+        //altura y anchura cabecera
+        width: $anchura-cabecera;
+        height: $altura-cabecera;
+
+    }
+}
+/*imagen*/
+$imagen: "img/cara.jpg";
+img{
+    
+
+    //tamaño imagen
+    $anchura-img:190px;
+    $altura-img:140px;
+    width: $anchura-img;
+    height: $altura-img;
+
+    //margen
+    $margen-imagen:20px;
+    margin-left: $margen-imagen;
+    margin-top: $margen-imagen;
+}
+/*color h1*/
+h1{
+    color: $letra-blanca;
+    &:hover{color: black;} 
+}
+
+h2{
+    color: $letra-negra;
+    &:hover{color:seagreen;}
+}
+
+.cuerpo{
+    color: $letra-negra;
+    
+}
+
+
+/*autor*/
+$autor:"AbrahamRuizCarmona";
+
+/*
+    esta web a sido realizada por #{$autor}
+*/
+
+
+//coleccion de colores de la tabla 
+
+$td-verde: green;
+$td-rojo:red;
+$td-rosa:pink;
+$td-celeste:blue;
+$td-amarillo:yellow;
+$td-gris:grey;
+$td-naranja:orange;
+
+$tamano-celda: 180px;
+$altura-celda: 50px;
+
+$td-colores: (
+  "cabezatabla": $td-verde,
+  "primero": $td-rojo,
+  "segundo": $td-rosa,
+  "tercero": $td-celeste,
+  "cuarto": $td-amarillo,
+  "quinto": $td-gris,
+  "sexto": $td-naranja
+);
+
+td{
+    text-decoration: none;
+    width: $tamano-celda;
+    height: $altura-celda;
+}
+
+@each $k, $v in $td-colores {
+    .td-#{$k} {
+      background-color: $v;
+    }
+}
+
+.derecha{
+    text-align: right;
+}
+
+//opción para el modo oscuro y claro
+$light-background: white; 
+$light-text: #036;
+$dark-background: #6b717f;
+$dark-text: #d2e1dd;
+
+@mixin tema-color($light-theme: true) {
+  @if $light-theme {
+    background-color: $light-background;
+    color: $light-text;
+  } @else {
+    background-color: $dark-background;
+    color: $dark-text;
+  }
+}
+//aplica el estilo al html
+html {
+    @include tema-color($light-theme: true);
+    body.dark & {
+      @include tema-color($light-theme: false);
+    }
+  }
