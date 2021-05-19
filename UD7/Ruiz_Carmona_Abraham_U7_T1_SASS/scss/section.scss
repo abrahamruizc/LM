@@ -1,0 +1,52 @@
+
+
+$margen-abajo:30px;
+
+
+.section{
+
+
+    .section-title-1{
+        border-bottom: 1px solid black;
+        margin-bottom: $margen-abajo;
+    }
+
+    .section-title-2{
+        border-bottom: 1px solid black;
+        margin-bottom: $margen-abajo;
+    }
+
+    .section-title-3{
+        border-bottom: 1px solid black;
+        margin-bottom: $margen-abajo;
+    }
+
+    .section-title-4{
+        border-bottom: 1px solid black;
+        margin-bottom: $margen-abajo;
+    }
+
+    .section__list{
+        margin-bottom: $margen-abajo;
+
+        .section__list-item{
+            color: black;
+
+            .left{
+                .name{
+                    font-weight: bold;
+                }
+            }
+
+            .right{
+               float: right;
+               .name{
+                font-weight: bold;
+            }
+            }
+        }
+
+
+    }
+
+}

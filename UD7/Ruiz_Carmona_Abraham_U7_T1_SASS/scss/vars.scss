@@ -1,0 +1,11 @@
+$temaClaro: true;
+
+.container {
+    @if($temaClaro == true){
+        background-color: white;
+        color: black;
+    }@else {
+        background-color: rgb(58, 58, 58);
+        color: white;
+      }
+}
